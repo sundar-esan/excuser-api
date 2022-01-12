@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excuser Api</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ex">EXCUSER</div>
+     <p>What excuser will do?</p>
+    <p> You will get random excuses for a specific person based on selected categories</p>
+    <p>Try it now, get excited excuses</p>
+    <div id="mainbox">
+    <select id="field">
+        <option value="">select category to get excuse</option>
+        <option value="family">Family</option>
+        <option value="office">Office</option>
+        <option value="children">Children</option>
+        <option value="college">College</option>
+        <option value="party">Party</option>
+    </select>
+    <button onclick="getdata()" id="search">Search</button>
+    <div id="box">
+    <div id="category"></div>
+    <div id="excuse"></div>
+    </div>
+
+    <p style="font-size: medium;">FOR VARIOUS EXCUSE</p>
+    <P style="font-size: medium;">REFRESH THE BELOW BUTTON</P>
+    
+   <button onclick="getdata()" id="refresh" >Refresh</button>
+   </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
